@@ -1,75 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Men's, Women's Clothing | E-Commerce Prototype</title>
-    <link
-      rel="shortcut icon"
-      href="img/logo.png"
-      type="image/x-icon"
-      sizes="16x16 32x32"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script
-      src="https://kit.fontawesome.com/d68da1cb3a.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <head>
+        <title>Men's, Women's Clothing | E-Commerce Prototype</title>
+        <link
+            rel="shortcut icon"
+            href="img/logo.png"
+            type="image/x-icon"
+            sizes="16x16 32x32"
+            />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script
+            src="https://kit.fontawesome.com/d68da1cb3a.js"
+            crossorigin="anonymous"
+            ></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 </html>
+
 <body>
-  <section id="header">
-    <a href=""><img src="img/logo.png" class="logo" /></a>
-    <div>
-      <ul id="navbar">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li>
-          <a href="cart.html"
-            ><i class="fa-solid fa-bag-shopping" style="color: #e48585"></i
-          ></a>
-        </li>
-      </ul>
-    </div>
-  </section>
 
-  <section id="intro">
-    <h4>Winter Sale</h4>
-    <h2>Huge value deals</h2>
-    <h1>All clothing products</h1>
-    <p>Upto 50% off with Coupons</p>
-    <button class="button"><a href="shop.html">Shop now</a></button>
-  </section>
-
-  <section id="product-section" class="section-padding">
-    <h2>Featured Products</h2>
-    <p>Winter Collection</p>
-    <div class="product-container">
-      <div class="product">
-        <img src="img/products/p2.jpg" />
-        <div class="desc">
-          <span>Sayd</span>
-          <h5>Khaki Winter Jacket</h5>
-          <div class="rating">
-            <i class="fa-solid fa-star" style="color: #f1cd1e"></i>
-            <i class="fa-solid fa-star" style="color: #f1cd1e"></i>
-            <i class="fa-solid fa-star" style="color: #f1cd1e"></i>
-            <i class="fa-solid fa-star" style="color: #f1cd1e"></i>
-            <i class="fa-solid fa-star" style="color: #f1cd1e"></i>
-          </div>
-          <h4>$87</h4>
-          <a href="#"
-            ><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i
-          ></a>
+    <!--Navbar, includes logo image-->
+    <section id="header">
+        <a href=""><img src="img/logo.png" class="logo" /></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html"
+                        ><i class="fa-solid fa-bag-shopping" style="color: #e48585"></i
+                        ></a>
+                </li>
+            </ul>
         </div>
-    <div class="feature-box">
-      <img src="img/features/f5.png">
-      <h6>Free Shipping</h6>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="script.js"></script>
+    <!--Opening sale message, image and button a-->
+    <section id="intro">
+        <h4>Winter Sale</h4>
+        <h2>Huge value deals</h2>
+        <h1>All clothing products</h1>
+        <p>Use coupon SAYD50 for upto 50% off with the coupon</p>
+        <button class="button"><a href="shop.html">Shop now</a></button>
+    </section>
+
+    <!--Product list, includes Product cards and title-->
+    <section id="product-section" class="section-padding">
+    <div class="section-title">
+        <h2>Featured Products</h2>
+        <p>Winter Collection</p>
+    </div>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="img/products/p3.png" />
+            <div class="desc">
+                <span>Sayd</span>
+                <h5>Winter Jacket</h5>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star""></i>
+                </div>
+                <h4>$87</h4>
+            </div>
+            <a href=""><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
+        </div>
+        <div class="product">
+            <img src="img/products/p1.png" />
+            <div class="desc">
+                <span>Sayd</span>
+                <h5>Pants</h5>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star""></i>
+                </div>
+                <h4>$38</h4>
+            </div>
+            <a href=""><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
+        </div>
+        <div class="product">
+            <img src="img/products/p2.png" />
+            <div class="desc">
+                <span>Sayd</span>
+                <h5>Short Sleeve Shirt</h5>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star""></i>
+                </div>
+                <h4>$56</h4>
+            </div>
+            <a href=""><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
+        </div>
+
+        <div class="product">
+            <img src="img/products/p4.png" />
+            <div class="desc">
+                <span>Sayd</span>
+                <h5>Winter Jacket</h5>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star""></i>
+                </div>
+                <h4>$99</h4>
+            </div>
+            <a href=""><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
+        </div>
+
+        <div class="product">
+            <img src="img/products/p5.png" />
+            <div class="desc">
+                <span>Sayd</span>
+                <h5>Hat</h5>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star""></i>
+                </div>
+                <h4>$42</h4>
+            </div>
+            <a href=""><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
+        </div>
+
+        <div class="product">
+            <img src="img/products/p5.png" />
+            <div class="desc">
+                <span>Sayd</span>
+                <h5>Hat</h5>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star""></i>
+                </div>
+                <h4>$49</h4>
+            </div>
+            <a href=""><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
+        </div>
+
+        <div class="product">
+            <img src="img/products/p4.png" />
+            <div class="desc">
+                <span>Sayd</span>
+                <h5>Winter Jacket</h5>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star""></i>
+                </div>
+                <h4>$120</h4>
+            </div>
+            <a href=""><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
+        </div>
+    </div>
+
+    <!--Feature cards-->
+    <section id="features" class="section-padding">
+        <div class="section-title>
+            <h2>Benefits</h2>
+            </div>
+            <div class="feature-box">
+            <img src="img/features/f1.png">
+            <h6>Online Order</h6>
+        </div>
+        <div class="feature-box">
+            <img src="img/features/f2.png">
+            <h6>Fast Delivery</h6>
+        </div>
+        <div class="feature-box">
+            <img src="img/features/f3.png">
+            <h6>Money Saver</h6>
+        </div>
+        <div class="feature-box">
+            <img src="img/features/f4.png">
+            <h6>Promotions</h6>
+        </div>
+        <div class="feature-box">
+            <img src="img/features/f5.png">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="feature-box">
+            <img src="img/features/f6.png">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
 </body>
