@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<title>Men's, Women's Clothing | E-Commerce Prototype</title>
-		<link rel="shortcut icon" href="img/logo.png" type="image/x-icon" sizes="16x16 32x32" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" sizes="16x16 32x32" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 		<script src="https://kit.fontawesome.com/d68da1cb3a.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="style.css" />
 	</head>
@@ -11,20 +11,30 @@
 
 <body>
 	<!--Navbar, includes logo image-->
+	<div id="tabstrip"></div>
+
 	<section id="header">
-		<a href=""><img src="img/logo.png" class="logo" /></a>
+		<div style="position: fixed"></div>
+		<div id="mobile">
+			<i id="bar" class="fa-solid fa-bars"></i>
+		</div>
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.jpg" class="logo-size" /></a>
+		</div>
+
 		<div>
 			<ul id="navbar">
-				<li><a class="active" href="index.html">Home</a></li>
+				<li><a class="active" href="">Home</a></li>
 				<li><a href="shop.html">Shop</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="contact.html">Contact</a></li>
 				<li>
-					<a href="cart.html"><i class="fa-solid fa-bag-shopping" style="color: #e48585"></i></a>
+					<a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
 				</li>
 				<li>
-					<a href="account.html"><i class="fa-solid fa-user" style="color: #e48585"></i></a>
+					<a href="account.html"><i class="fa-solid fa-user"></i></a>
 				</li>
+				<a id="close"><i class="fa-solid fa-xmark"></i></a>
 			</ul>
 		</div>
 	</section>
@@ -60,7 +70,7 @@
 					</div>
 					<h4>$87</h4>
 				</div>
-				<a href=""><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
+				<a><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
 			</div>
 			<div class="product">
 				<img src="img/products/p1.png" />
@@ -165,117 +175,23 @@
 		</div>
 	</section>
 
-	<section id="banner">
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			version="1.1"
-			xmlns:xlink="http://www.w3.org/1999/xlink"
-			xmlns:svgjs="http://svgjs.dev/svgjs"
-			width="1440"
-			height="560"
-			preserveAspectRatio="none"
-			viewBox="0 0 1440 560"
-		>
-			<g clip-path='url("#SvgjsClipPath6677")' fill="none">
-				<rect width="1440" height="560" x="0" y="0" fill='url("#SvgjsLinearGradient6678")'></rect>
-				<circle r="42.47" cx="136.78" cy="0.77" fill="rgba(193, 65, 65, 1)"></circle>
-				<circle r="55.67" cx="1165.47" cy="327.16" fill="rgba(193, 65, 65, 1)"></circle>
-				<circle r="55.69" cx="353.17" cy="372.93" fill="rgba(193, 65, 65, 1)"></circle>
-				<circle r="27.075" cx="1074.45" cy="408.54" fill="rgba(193, 65, 65, 1)"></circle>
-				<circle r="46.015" cx="304.54" cy="114.13" fill='url("#SvgjsLinearGradient6679")'></circle>
-				<circle r="34.12" cx="1093.48" cy="7.93" fill='url("#SvgjsLinearGradient6680")'></circle>
-				<circle r="28.415" cx="143.89" cy="484.17" fill="rgba(193, 65, 65, 1)"></circle>
-				<circle r="19.5" cx="578.59" cy="52.09" fill="rgba(193, 65, 65, 1)"></circle>
-				<circle r="21.33" cx="980.7" cy="112.79" fill='url("#SvgjsLinearGradient6681")'></circle>
-				<circle r="24.87" cx="277.12" cy="490.21" fill="rgba(193, 65, 65, 1)"></circle>
-				<circle r="26.38" cx="1068.29" cy="289.18" fill="rgba(193, 65, 65, 1)"></circle>
-				<circle r="33.76" cx="1248.35" cy="537.58" fill='url("#SvgjsLinearGradient6682")'></circle>
-				<circle r="35.87" cx="1063.7" cy="288.35" fill="rgba(193, 65, 65, 1)"></circle>
-				<circle r="17.12" cx="1030.71" cy="537.15" fill='url("#SvgjsLinearGradient6683")'></circle>
-			</g>
-			<defs>
-				<clipPath id="SvgjsClipPath6677">
-					<rect width="1440" height="560" x="0" y="0"></rect>
-				</clipPath>
-				<linearGradient
-					x1="15.28%"
-					y1="-39.29%"
-					x2="84.72%"
-					y2="139.29%"
-					gradientUnits="userSpaceOnUse"
-					id="SvgjsLinearGradient6678"
-				>
-					<stop stop-color="rgba(71, 14, 45, 1)" offset="0"></stop>
-					<stop stop-color="rgba(162, 51, 51, 1)" offset="1"></stop>
-				</linearGradient>
-				<linearGradient
-					x1="212.51000000000002"
-					y1="114.13"
-					x2="396.57000000000005"
-					y2="114.13"
-					gradientUnits="userSpaceOnUse"
-					id="SvgjsLinearGradient6679"
-				>
-					<stop stop-color="rgba(226, 152, 222, 1)" offset="0.27"></stop>
-					<stop stop-color="rgba(193, 65, 65, 1)" offset="0.9"></stop>
-				</linearGradient>
-				<linearGradient
-					x1="1025.24"
-					y1="7.93"
-					x2="1161.72"
-					y2="7.93"
-					gradientUnits="userSpaceOnUse"
-					id="SvgjsLinearGradient6680"
-				>
-					<stop stop-color="rgba(226, 152, 222, 1)" offset="0.27"></stop>
-					<stop stop-color="rgba(193, 65, 65, 1)" offset="0.9"></stop>
-				</linearGradient>
-				<linearGradient
-					x1="938.0400000000001"
-					y1="112.79"
-					x2="1023.3600000000001"
-					y2="112.79"
-					gradientUnits="userSpaceOnUse"
-					id="SvgjsLinearGradient6681"
-				>
-					<stop stop-color="rgba(226, 152, 222, 1)" offset="0.27"></stop>
-					<stop stop-color="rgba(193, 65, 65, 1)" offset="0.9"></stop>
-				</linearGradient>
-				<linearGradient
-					x1="1180.83"
-					y1="537.58"
-					x2="1315.87"
-					y2="537.58"
-					gradientUnits="userSpaceOnUse"
-					id="SvgjsLinearGradient6682"
-				>
-					<stop stop-color="rgba(226, 152, 222, 1)" offset="0.27"></stop>
-					<stop stop-color="rgba(193, 65, 65, 1)" offset="0.9"></stop>
-				</linearGradient>
-				<linearGradient
-					x1="996.47"
-					y1="537.15"
-					x2="1064.95"
-					y2="537.15"
-					gradientUnits="userSpaceOnUse"
-					id="SvgjsLinearGradient6683"
-				>
-					<stop stop-color="rgba(226, 152, 222, 1)" offset="0.27"></stop>
-					<stop stop-color="rgba(193, 65, 65, 1)" offset="0.9"></stop>
-				</linearGradient>
-			</defs>
-		</svg>
-		<h2></h2>
-		<h2>Upto <span>80%</span> off selected Glasses & Accessories</h2>
-		<button>Explore</button>
+	<!--Banner-->
+	<section id="banner" class="parallax">
+		<div class="banner-text">
+			<h2>Deal</h2>
+			<h2>Up to <span>80%</span> off selected Glasses & Accessories</h2>
+		</div>
+
+		<button class="button"><a href="shop.html">Explore</a></button>
 	</section>
 
+	<!--Mid Offer-->
 	<section id="mid-offer">
 		<div></div>
 	</section>
 
 	<!--Feature cards-->
-	<section id="feature-section" class="section-padding">
+	<section id="feature-section" class="section-padding parallax">
 		<div class="section-title">
 			<h2>Benefits</h2>
 		</div>
@@ -283,47 +199,109 @@
 		<div class="feature-container">
 			<div class="feature">
 				<div class="desc">
-					<img src="img/features/f1.png" />
+					<img src="img/features/f1.jpg" />
 					<h6>Online Order</h6>
 				</div>
 			</div>
 
 			<div class="feature">
 				<div class="desc">
-					<img src="img/features/f2.png" />
+					<img src="img/features/f2.jpg" />
 					<h6>Fast Delivery</h6>
 				</div>
 			</div>
 
 			<div class="feature">
 				<div class="desc">
-					<img src="img/features/f3.png" />
+					<img src="img/features/f3.jpg" />
 					<h6>Money Saver</h6>
 				</div>
 			</div>
 
 			<div class="feature">
 				<div class="desc">
-					<img src="img/features/f4.png" />
+					<img src="img/features/f4.jpg" />
 					<h6>Promotions</h6>
 				</div>
 			</div>
 
 			<div class="feature">
 				<div class="desc">
-					<img src="img/features/f5.png" />
+					<img src="img/features/f5.jpg" />
 					<h6>Free Shipping</h6>
 				</div>
 			</div>
 
 			<div class="feature">
 				<div class="desc">
-					<img src="img/features/f6.png" />
+					<img src="img/features/f6.jpg" />
 					<h6>24/7 Support</h6>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<section class="newsletter">
+		<div></div>
+	</section>
+
+	<footer class="section-padding">
+		<div class="container">
+			<div class="footer-col">
+				<img src="img/logo.jpg" class="logo-size" />
+				<address>
+					<h4>Contact</h4>
+					<p><strong>Address:</strong> 42 Wallaby Way, Sydney, Australia</p>
+					<p><strong>Phone:</strong>(+61)491 570 006</p>
+					<p><strong>Store Open Hours:</strong> 8:00 - 18:00, Mon-Sat</p>
+				</address>
+				<div class="socials">
+					<h4>Follow Us</h4>
+					<div class="social-icons">
+						<a href=""><i class="fa-brands fa-facebook"></i></a>
+						<a href=""><i class="fa-brands fa-instagram"></i></a>
+						<a href=""><i class="fa-brands fa-twitter"></i></a>
+						<a href="https://www.linkedin.com/in/sayden945/"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://github.com/Sayden945"><i class="fa-brands fa-github"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-col">
+				<h4>About</h4>
+				<a href="about.html">About Us</a>
+				<a href="">Delivery Information</a>
+				<a href="">Privacy Policy</a>
+				<a href="">Terms & Conditions</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+
+			<div class="footer-col">
+				<h4>My Account</h4>
+				<a href="">Sign In</a>
+				<a href="cart.html">View Cart</a>
+				<a href="">Wishlist</a>
+				<a href="">Track Order</a>
+				<a href="contact.html">Support</a>
+			</div>
+
+			<div class="footer-col">
+				<h4>Install the App</h4>
+				<p>Available on App Store or Google Play</p>
+				<div class="badges">
+					<div class="introwrap small-12 medium-10 large-8 small-centered columns badges">
+						<a href="" class="badge1"><img src="img/pay/ap1.svg" alt="Download on the App Store" /></a>
+						<a href="" class="badge2"><img src="img/pay/ap2.png" alt="Get it on Google Play" /></a>
+					</div>
+				</div>
+				<p>Secure Payment Gateways</p>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>2023, Sayd - E-Commerce Site</p>
+		</div>
+	</footer>
 
 	<script src="script.js"></script>
 </body>
