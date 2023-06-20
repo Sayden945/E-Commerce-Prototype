@@ -371,7 +371,6 @@ body {
 	background-image: url(img/banners/b3.svg);
 	height: 45%;
 	width: 100%;
-	background-position: top 25% right 0%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -433,6 +432,24 @@ body {
 }
 /* #endregion */
 
+/* About Sayd page*/
+#about {
+	background-color: #a23333;
+	padding-top: 25px;
+	padding-bottom: 80px;
+}
+
+#about p {
+	color: #f3c4c4;
+	padding: 1% 5%;
+}
+
+#about h1 {
+	color: #fae5e5;
+	margin-top: 1%;
+	padding: 2% 5%;
+}
+
 footer .container {
 	display: flex;
 	flex-wrap: wrap;
@@ -479,7 +496,7 @@ footer .logo-size {
 .copyright {
 	text-align: center;
 	font-size: 5px;
-	padding: 30px;
+	padding-bottom: 5px;
 }
 
 .copyright p {
