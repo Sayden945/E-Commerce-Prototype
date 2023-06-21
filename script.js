@@ -15,6 +15,15 @@ if (close) {
 	});
 }
 
+const carousel = new bootstrap.Carousel("#carousel-home");
+
+$(carousel).carousel({
+	interval: 5000,
+	cycle,
+	wrap: true,
+	pause: false,
+});
+
 // listen for load event in the window
 document.addEventListener("DOMContentLoaded", function (event) {
 	// do things after the DOM loads fully

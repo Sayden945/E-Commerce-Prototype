@@ -357,13 +357,20 @@ body {
 }
 /* #endregion */
 
-#mid-offer {
+#carousel-home {
 	background-image: url("img/fashion.jpg");
-	height: 90%;
-	width: 100%;
-	background-size: cover;
-	background-position: top 25% right 0%;
-	padding: 0 80px;
+}
+
+#carousel-home .carousel-item {
+	height: 790px;
+}
+
+.carousel-item img {
+	position: absolute;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+	min-height: 100%;
 }
 
 /* #region Banner*/
