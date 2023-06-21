@@ -513,6 +513,69 @@ footer .logo-size {
 	margin: 1px 0px;
 }
 
+/* #region Search*/
+
+::placeholder {
+	font-style: italic;
+	font-size: 1em;
+	text-align: end;
+	padding: 5px;
+	color: #d65d5d;
+}
+
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 24px;
+	padding: 1px 4px;
+}
+
+.input {
+	max-width: 140px;
+	height: 100%;
+	outline: none;
+	font-size: 14px;
+	font-weight: 500;
+	background-color: #fae5e5;
+	caret-color: #f7f7f8;
+	color: #a23333;
+	padding: 7px 10px;
+	border: 2px solid transparent;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+	margin-right: 1px;
+	transition: all 0.2s ease;
+}
+
+.input:hover {
+	border: 2px solid rgba(255, 255, 255, 0.16);
+}
+
+.input:focus {
+	border: 2px solid #d65d5d;
+}
+
+.search__btn {
+	border: none;
+	cursor: pointer;
+	background-color: #d65d5d;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	height: 100%;
+	width: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 13px;
+}
+
+.search__btn:hover {
+	background-color: #a23333;
+}
+
+/* endregion */
+
 /* #region Badge*/
 .badges {
 	width: 100%;
