@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<title>Men's, Women's Clothing | E-Commerce Prototype</title>
+		<meta name="author" content="Ayden Smith" />
 		<link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" sizes="16x16 32x32" />
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 		<script src="https://kit.fontawesome.com/d68da1cb3a.js" crossorigin="anonymous"></script>
@@ -11,6 +12,13 @@
 			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
 			crossorigin="anonymous"
 		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+			crossorigin="anonymous"
+		/>
+		<link rel="preload" as="image" href="https://www.sayddesign.xyz/img/intro.jpg" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 </html>
@@ -55,246 +63,249 @@
 		</div>
 	</section>
 
-	<!--Opening sale message, image and button a-->
-	<section id="intro">
-		<h4>Winter Sale</h4>
-		<h2>Huge value deals</h2>
-		<h1>All clothing products</h1>
-		<p>Use coupon SAYD50 for upto 50% off with the coupon</p>
-		<button class="button"><a href="shop.html">Shop now</a></button>
-	</section>
+	<div id="extraControls">
+		<!--Opening sale message, image and button a-->
+		<section id="intro" class="container-fluid">
+			<h4>Winter Sale</h4>
+			<h2>Huge value deals</h2>
+			<h1>All clothing products</h1>
+			<p>Use coupon SAYD50 for up to 50% off with the coupon</p>
+			<button class="button"><a href="shop.html">Shop now</a></button>
+		</section>
 
-	<!--Product list, includes Product cards and title-->
-	<section id="product-section" class="section-padding">
-		<div class="section-title">
-			<h2>Featured Products</h2>
-			<p>Winter Collection</p>
-		</div>
+		<!--Product list, includes Product cards and title-->
+		<section id="product-section" class="section-padding">
+			<div class="section-title">
+				<h2>Featured Products</h2>
+				<p>Winter Collection</p>
+			</div>
 
-		<div class="product-container">
-			<div class="product">
-				<img src="img/products/p3.jpg" />
-				<div class="desc">
-					<span>Sayd</span>
-					<h5>Winter Jacket</h5>
-					<div class="rating">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
+			<div class="product-container">
+				<div class="product">
+					<img src="img/products/p3.jpg" />
+					<div class="desc">
+						<span>Sayd</span>
+						<h5>Winter Jacket</h5>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<h4>$87</h4>
 					</div>
-					<h4>$87</h4>
+					<a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
 				</div>
-				<a><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
-			</div>
-			<div class="product">
-				<img src="img/products/p1.jpg" />
-				<div class="desc">
-					<span>Sayd</span>
-					<h5>Pants</h5>
-					<div class="rating">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
+				<div class="product">
+					<img src="img/products/p1.jpg" />
+					<div class="desc">
+						<span>Sayd</span>
+						<h5>Pants</h5>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<h4>$38</h4>
 					</div>
-					<h4>$38</h4>
+					<a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
 				</div>
-				<a href=""><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
-			</div>
-			<div class="product">
-				<img src="img/products/p2.png" />
-				<div class="desc">
-					<span>Sayd</span>
-					<h5>Short Sleeve Shirt</h5>
-					<div class="rating">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
+
+				<div class="product">
+					<img src="img/products/p4.jpg" />
+					<div class="desc">
+						<span>Sayd</span>
+						<h5>Winter Jacket</h5>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<h4>$99</h4>
 					</div>
-					<h4>$56</h4>
+					<a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
 				</div>
-				<a href=""><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
-			</div>
 
-			<div class="product">
-				<img src="img/products/p4.jpg" />
-				<div class="desc">
-					<span>Sayd</span>
-					<h5>Winter Jacket</h5>
-					<div class="rating">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
+				<div class="product">
+					<img src="img/products/p5.png" />
+					<div class="desc">
+						<span>Sayd</span>
+						<h5>Hat</h5>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<h4>$42</h4>
 					</div>
-					<h4>$99</h4>
+					<a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
 				</div>
-				<a href=""><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
-			</div>
 
-			<div class="product">
-				<img src="img/products/p5.png" />
-				<div class="desc">
-					<span>Sayd</span>
-					<h5>Hat</h5>
-					<div class="rating">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
+				<div class="product">
+					<img src="img/products/p5.png" />
+					<div class="desc">
+						<span>Sayd</span>
+						<h5>Hat</h5>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<h4>$49</h4>
 					</div>
-					<h4>$42</h4>
+					<a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
 				</div>
-				<a href=""><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
-			</div>
 
-			<div class="product">
-				<img src="img/products/p5.png" />
-				<div class="desc">
-					<span>Sayd</span>
-					<h5>Hat</h5>
-					<div class="rating">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
+				<div class="product">
+					<img src="img/products/p2.png" />
+					<div class="desc">
+						<span>Sayd</span>
+						<h5>Short Sleeve Shirt</h5>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<h4>$56</h4>
 					</div>
-					<h4>$49</h4>
+					<a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
 				</div>
-				<a href=""><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
-			</div>
 
-			<div class="product">
-				<img src="img/products/p4.jpg" />
-				<div class="desc">
-					<span>Sayd</span>
-					<h5>Winter Jacket</h5>
-					<div class="rating">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
+				<div class="product">
+					<img src="img/products/p4.jpg" />
+					<div class="desc">
+						<span>Sayd</span>
+						<h5>Winter Jacket</h5>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<h4>$120</h4>
 					</div>
-					<h4>$120</h4>
-				</div>
-				<a href=""><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
-			</div>
-		</div>
-	</section>
-
-	<!--Banner-->
-	<section id="banner" class="parallax">
-		<div class="banner-text">
-			<h2>Deal</h2>
-			<h2>Up to <span>80%</span> off selected Glasses & Accessories</h2>
-		</div>
-
-		<button class="button"><a href="shop.html">Explore</a></button>
-	</section>
-
-	<!--Mid Offer-->
-	<section id="carousel-home" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="img/carousel/c1.jpg" class="d-block w-100" alt="..." />
-				<div class="carousel-caption d-none d-md-block">
-					<h5>Men's</h5>
-					<p>Some representative placeholder content for the first slide.</p>
+					<a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #d65d5d"></i></a>
 				</div>
 			</div>
-			<div class="carousel-item">
-				<img src="img/carousel/c2.jpg" class="d-block w-100" alt="..." />
-				<div class="carousel-caption d-none d-md-block">
-					<h5>Women's</h5>
-					<p>Some representative placeholder content for the first slide.</p>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img src="img/carousel/c3.jpg" class="d-block w-100" alt="..." />
-				<div class="carousel-caption d-none d-md-block">
-					<h5>Kid's</h5>
-					<p>Some representative placeholder content for the first slide.</p>
-				</div>
-			</div>
-		</div>
-	</section>
+		</section>
 
-	<!--Feature cards-->
-	<section id="feature-section" class="section-padding parallax">
-		<div class="section-title">
-			<h2>Benefits</h2>
-		</div>
-
-		<div class="feature-container">
-			<div class="feature">
-				<div class="desc">
-					<img src="img/features/f1.jpg" />
-					<h6>Online Order</h6>
-				</div>
+		<!--Banner-->
+		<section id="banner" class="parallax container-fluid">
+			<div class="banner-text">
+				<h2>Deal</h2>
+				<h2>Up to <span>80%</span> off selected Glasses & Accessories</h2>
 			</div>
 
-			<div class="feature">
-				<div class="desc">
-					<img src="img/features/f2.jpg" />
-					<h6>Fast Delivery</h6>
+			<button class="button"><a href="shop.html">Explore</a></button>
+		</section>
+
+		<!--Mid Offer-->
+		<section id="carousel-home" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-bs-interval="5000" data-bs-pause="false" wrap>
+					<img src="img/carousel/c1.jpg" class="d-block w-100" alt="..." />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Men's</h5>
+						<button class="button"><a href="shop.html">Explore</a></button>
+					</div>
+				</div>
+				<div class="carousel-item" data-bs-interval="5000" data-bs-pause="false" wrap>
+					<img src="img/carousel/c2.jpg" class="d-block w-100" alt="..." />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Women's</h5>
+						<button class="button"><a href="shop.html">Explore</a></button>
+					</div>
+				</div>
+				<div class="carousel-item" data-bs-interval="5000" data-bs-pause="false" wrap>
+					<img src="img/carousel/c3.jpg" class="d-block w-100" alt="..." />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Kid's</h5>
+						<button class="button"><a href="shop.html">Explore</a></button>
+					</div>
 				</div>
 			</div>
+		</section>
 
-			<div class="feature">
-				<div class="desc">
-					<img src="img/features/f3.jpg" />
-					<h6>Money Saver</h6>
-				</div>
+		<!--Feature cards-->
+		<section id="feature-section" class="section-padding parallax">
+			<div class="section-title">
+				<h2>Benefits</h2>
 			</div>
 
-			<div class="feature">
-				<div class="desc">
-					<img src="img/features/f4.jpg" />
-					<h6>Promotions</h6>
+			<div class="feature-container">
+				<div class="feature">
+					<div class="desc">
+						<img src="img/features/f1.jpg" />
+						<h6>Online Order</h6>
+					</div>
+				</div>
+
+				<div class="feature">
+					<div class="desc">
+						<img src="img/features/f2.jpg" />
+						<h6>Fast Delivery</h6>
+					</div>
+				</div>
+
+				<div class="feature">
+					<div class="desc">
+						<img src="img/features/f3.jpg" />
+						<h6>Money Saver</h6>
+					</div>
+				</div>
+
+				<div class="feature">
+					<div class="desc">
+						<img src="img/features/f4.jpg" />
+						<h6>Promotions</h6>
+					</div>
+				</div>
+
+				<div class="feature">
+					<div class="desc">
+						<img src="img/features/f5.jpg" />
+						<h6>Free Shipping</h6>
+					</div>
+				</div>
+
+				<div class="feature">
+					<div class="desc">
+						<img src="img/features/f6.jpg" />
+						<h6>24/7 Support</h6>
+					</div>
 				</div>
 			</div>
+		</section>
 
-			<div class="feature">
-				<div class="desc">
-					<img src="img/features/f5.jpg" />
-					<h6>Free Shipping</h6>
-				</div>
-			</div>
-
-			<div class="feature">
-				<div class="desc">
-					<img src="img/features/f6.jpg" />
-					<h6>24/7 Support</h6>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="newsletter">
-		<div></div>
-	</section>
+		<section class="newsletter">
+			<div></div>
+		</section>
+	</div>
 
 	<footer class="section-padding">
 		<div class="container">
 			<div class="footer-col">
 				<img src="img/logo.jpg" class="logo-size" />
 				<address>
-					<h4>Contact</h4>
+					<h4><strong>Contact</strong></h4>
 					<p><strong>Address:</strong> 42 Wallaby Way, Sydney, Australia</p>
 					<p><strong>Phone:</strong>(+61)491 570 006</p>
 					<p><strong>Store Open Hours:</strong> 8:00 - 18:00, Mon-Sat</p>
 				</address>
 				<div class="socials">
-					<h4>Follow Us</h4>
+					<h4>Follow Us On Social Media:</h4>
 					<div class="social-icons">
 						<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa-brands fa-facebook"></i></a>
 						<a href="https://www.youtube.com/watch?v=pHqC0uoatag"><i class="fa-brands fa-instagram"></i></a>
@@ -306,7 +317,7 @@
 			</div>
 
 			<div class="footer-col">
-				<h4>About</h4>
+				<h4><strong>About</strong></h4>
 				<a href="about.html">About Us</a>
 				<a href="">Delivery Information</a>
 				<a href="">Privacy Policy</a>
@@ -315,8 +326,8 @@
 			</div>
 
 			<div class="footer-col">
-				<h4>My Account</h4>
-				<a href="">Sign In</a>
+				<h4><strong>Account</strong></h4>
+				<a href="account.html">Sign In</a>
 				<a href="cart.html">View Cart</a>
 				<a href="">Wishlist</a>
 				<a href="">Track Order</a>
@@ -324,7 +335,7 @@
 			</div>
 
 			<div class="footer-col">
-				<h4>Install the App</h4>
+				<h4><strong>Install the App</strong></h4>
 				<p>Available on App Store or Google Play</p>
 				<div class="badges">
 					<div class="introwrap small-12 medium-10 large-8 small-centered columns badges">
@@ -332,7 +343,7 @@
 						<a href="" class="badge2"><img src="img/pay/ap2.png" alt="Get it on Google Play" /></a>
 					</div>
 				</div>
-				<p>Secure Payment Gateways</p>
+				<p><strong>Secure Payment Gateways</strong></p>
 			</div>
 		</div>
 

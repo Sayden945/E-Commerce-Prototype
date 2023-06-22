@@ -15,17 +15,12 @@ if (close) {
 	});
 }
 
-const carousel = new bootstrap.Carousel("#carousel-home");
+/*
+$(window).load(function () {
+	document.getElementById("extraControls").style.visibility = "hidden";
 
-$(carousel).carousel({
-	interval: 5000,
-	cycle,
-	wrap: true,
-	pause: false,
+	$("#loading").fadeOut(500, function () {
+		document.getElementById("extraControls").style.visibility = "visible";
+	});
 });
-
-// listen for load event in the window
-document.addEventListener("DOMContentLoaded", function (event) {
-	// do things after the DOM loads fully
-	console.log("Everything is loaded");
-});
+ */
